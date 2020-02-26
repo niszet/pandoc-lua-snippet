@@ -2,13 +2,17 @@
 	"name": "pandoc-lua-snippet",
 	"displayName": "Pandoc Lua Filter Snippet",
 	"description": "Code Snippets for Pandoc Lua Filter",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"publisher": "niszet",
 	"engines": {
 		"vscode": "^1.42.0"
 	},
-	"activationEvents": ["onLanguage:Lua"],
-	"categories": ["Snippets"],
+	"activationEvents": [
+		"onLanguage:Lua"
+	],
+	"categories": [
+		"Snippets"
+	],
 	"main": "./out/extension.js",
 	"contributes": {
 		"snippets": [
