@@ -3,12 +3,11 @@
 	"displayName": "Pandoc Lua Filter Snippet",
 	"description": "Code Snippets for Pandoc Lua Filter",
 	"version": "0.0.1",
+	"publisher": "niszet",
 	"engines": {
 		"vscode": "^1.42.0"
 	},
-	"categories": [
-		"Other",
-	],
+	"categories": ["Snippets"],
 	"main": "./out/extension.js",
 	"contributes": {
 		"snippets": [
