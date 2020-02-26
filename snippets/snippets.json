@@ -1,0 +1,579 @@
+{
+    "FORMAT": {
+        "body": "FORMAT",
+        "description": "Format of the pandoc writer",
+        "prefix": "format",
+        "scope": "pandoc.lua"
+    },
+    "PANDOC_READER_OPTIONS": {
+        "body": "PANDOC_READER_OPTIONS",
+        "description": "",
+        "prefix": "pandoc_reader_options",
+        "scope": "pandoc.lua"
+    },
+    "PANDOC_VERSION": {
+        "body": "PANDOC_VERSION",
+        "description": "",
+        "prefix": "pandoc_version",
+        "scope": "pandoc.lua"
+    },
+    "PANDOC_API_VERSION": {
+        "body": "PANDOC_API_VERSION",
+        "description": "",
+        "prefix": "pandoc_api_version",
+        "scope": "pandoc.lua"
+    },
+    "PANDOC_SCRIPT_FILE": {
+        "body": "PANDOC_SCRIPT_FILE",
+        "description": "",
+        "prefix": "pandoc_script_file",
+        "scope": "pandoc.lua"
+    },
+    "PANDOC_STATE": {
+        "body": "PANDOC_STATE",
+        "description": "",
+        "prefix": "pandoc_state",
+        "scope": "pandoc.lua"
+    },
+    "Pandoc": {
+        "body": "Pandoc(${1:blocks}${2:, meta})$0",
+        "description": "Pandoc(blocks[, meta])",
+        "prefix": "pandoc",
+        "scope": "pandoc.lua"
+    },
+    "Meta": {
+        "body": "Meta(${1:table})$0",
+        "description": "Meta(table)",
+        "prefix": "meta",
+        "scope": "pandoc.lua"
+    },
+    "MetaBlocks": {
+        "body": "MetaBlocks(${1:blocks})$0",
+        "description": "MetaBlocks(blocks)",
+        "prefix": "metablocks",
+        "scope": "pandoc.lua"
+    },
+    "MetaInlines": {
+        "body": "MetaInlines(${1:inlines})$0",
+        "description": "MetaInlines(inlines)",
+        "prefix": "metainlines",
+        "scope": "pandoc.lua"
+    },
+    "MetaList": {
+        "body": "MetaList(${1:meta_values})$0",
+        "description": "MetaList(meta_values)",
+        "prefix": "metalist",
+        "scope": "pandoc.lua"
+    },
+    "MetaMap": {
+        "body": "MetaMap(${1:key_value_map})$0",
+        "description": "MetaMap(key_value_map)",
+        "prefix": "metamap",
+        "scope": "pandoc.lua"
+    },    
+    "MetaString": {
+        "body": "MetaString(${1:str})$0",
+        "description": "MetaString(str)",
+        "prefix": "metastring",
+        "scope": "pandoc.lua"
+    },    
+    "MetaBool": {
+        "body": "MetaBool(${1:bool})$0",
+        "description": "MetaBool(bool)",
+        "prefix": "metabool",
+        "scope": "pandoc.lua"
+    },
+    "BlockQuote": {
+        "body": "BlockQuote(${1:content})$0",
+        "description": "BlockQuote(content)",
+        "prefix": "blockquote",
+        "scope": "pandoc.lua"
+    },
+    "BulletList": {
+        "body": "BulletList(${1:content})$0",
+        "description": "BulletList(content)",
+        "prefix": "bulletlist",
+        "scope": "pandoc.lua"
+    },
+    "CodeBlock": {
+        "body": "CodeBlock(${1:text}${2:, attr})$0",
+        "description": "CodeBlock(text[, attr])",
+        "prefix": "codeblock",
+        "scope": "pandoc.lua"
+    },
+    "DefinitionList": {
+        "body": "DefinitionList(${1:content})$0",
+        "description": "DefinitionList(content)",
+        "prefix": "definitionlist",
+        "scope": "pandoc.lua"
+    },
+    "Div": {
+        "body": "Div(${1:content}${2:, attr})$0",
+        "description": "Div(content[, attr])",
+        "prefix": "div",
+        "scope": "pandoc.lua"
+    },
+    "Header": {
+        "body": "Header(${1:level}${2:, content}${3, attr})$0",
+        "description": "Header(level, content[, attr])",
+        "prefix": "header",
+        "scope": "pandoc.lua"
+    },
+    "HorizontalRule": {
+        "body": "HorizontalRule()$0",
+        "description": "HorizontalRule()",
+        "prefix": "horizontalrule",
+        "scope": "pandoc.lua"
+    },
+    "LineBlock": {
+        "body": "LineBlock(${1:content})$0",
+        "description": "LineBlock(content)",
+        "prefix": "lineblock",
+        "scope": "pandoc.lua"
+    },
+    "Null": {
+        "body": "Null()$0",
+        "description": "Null()",
+        "prefix": "null",
+        "scope": "pandoc.lua"
+    },
+    "OrderedList": {
+        "body": "OrderedList(${1:items}${2:, listAttributes})$0",
+        "description": "OrderedList(items[, listAttributes])",
+        "prefix": "orderedlist",
+        "scope": "pandoc.lua"
+    },
+    "Para": {
+        "body": "Para(${1:content})$0",
+        "description": "Para(content)",
+        "prefix": "para",
+        "scope": "pandoc.lua"
+    },
+    "Plain": {
+        "body": "Plain(${1:content})$0",
+        "description": "Plain(content)",
+        "prefix": "plain",
+        "scope": "pandoc.lua"
+    },
+    "RawBlock": {
+        "body": "RawBlock(${1:format}${2:, text})$0",
+        "description": "RawBlock(format, text)",
+        "prefix": "rawblock",
+        "scope": "pandoc.lua"
+    },
+    "Table": {
+        "body": "Table(${1:caption}${2:, aligns}${3:, widths}${4:, headers}${5:, rows})$0",
+        "description": "Table(caption, aligns, widths, headers, rows)",
+        "prefix": "table",
+        "scope": "pandoc.lua"
+    },
+    "Cite": {
+        "body": "Cite(${1:content}${2:, citations})$0",
+        "description": "Cite(content, citations)",
+        "prefix": "cite",
+        "scope": "pandoc.lua"
+    },
+    "Code": {
+        "body": "Code(${1:text}${2:, attr})$0",
+        "description": "Code(text[, attr])",
+        "prefix": "code",
+        "scope": "pandoc.lua"
+    },
+    "Emph": {
+        "body": "Emph(${1:content})$0",
+        "description": "Emph(content)",
+        "prefix": "emph",
+        "scope": "pandoc.lua"
+    },
+    "Image": {
+        "body": "Image(${1:caption}${2:, src}${3:, title}${4:, attr})$0",
+        "description": "Image(caption, src[, title[, attr]])",
+        "prefix": "image",
+        "scope": "pandoc.lua"
+    },
+    "LineBreak": {
+        "body": "LineBreak()$0",
+        "description": "LineBreak()",
+        "prefix": "linebreak",
+        "scope": "pandoc.lua"
+    },
+    "Link": {
+        "body": "Link(${1:content}${2:, target}${3:, title}${4:, attr})$0",
+        "description": "Link(content, target[, title[, attr]])",
+        "prefix": "link",
+        "scope": "pandoc.lua"
+    },
+    "Math": {
+        "body": "Math(${1:mathtype}${2:, text})$0",
+        "description": "Math(mathtype, text)",
+        "prefix": "math",
+        "scope": "pandoc.lua"
+    },
+    "DisplayMath": {
+        "body": "DisplayMath(${1:text})$0",
+        "description": "DisplayMath(text)",
+        "prefix": "displaymath",
+        "scope": "pandoc.lua"
+    },    
+    "InlineMath": {
+        "body": "InlineMath(${1:text})$0",
+        "description": "InlineMath(text)",
+        "prefix": "inlinemath",
+        "scope": "pandoc.lua"
+    },
+    "Note": {
+        "body": "Note(${1:content})$0",
+        "description": "Note(content)",
+        "prefix": "note",
+        "scope": "pandoc.lua"
+    },
+    "Quoted": {
+        "body": "Quoted(${1:quotetype}${2:, content})$0",
+        "description": "Quoted(quotetype, content)",
+        "prefix": "quoted",
+        "scope": "pandoc.lua"
+    },
+    "SingleQuoted": {
+        "body": "SingleQuoted(${1:content})$0",
+        "description": "SingleQuoted(content)",
+        "prefix": "singlequoted",
+        "scope": "pandoc.lua"
+    },
+    "DoubleQuoted": {
+        "body": "DoubleQuoted(${1:content})$0",
+        "description": "DoubleQuoted(content)",
+        "prefix": "doublequoted",
+        "scope": "pandoc.lua"
+    },
+    "RawInline": {
+        "body": "RawInline(${1:format}${2:, text})$0",
+        "description": "RawInline(format, text)",
+        "prefix": "rawinline",
+        "scope": "pandoc.lua"
+    },
+    "SmallCaps": {
+        "body": "SmallCaps(${1:content})$0",
+        "description": "SmallCaps(content)",
+        "prefix": "smallcaps",
+        "scope": "pandoc.lua"
+    },
+    "SoftBreak": {
+        "body": "SoftBreak()$0",
+        "description": "SoftBreak()",
+        "prefix": "softbreak",
+        "scope": "pandoc.lua"
+    },
+    "Space": {
+        "body": "Space()$0",
+        "description": "Space()",
+        "prefix": "space",
+        "scope": "pandoc.lua"
+    },
+    "Span": {
+        "body": "Span(${1:content}${2:, attr})$0",
+        "description": "Span(content[, attr])",
+        "prefix": "span",
+        "scope": "pandoc.lua"
+    },
+    "Str": {
+        "body": "Str(${1:text})$0",
+        "description": "Str(text)",
+        "prefix": "str",
+        "scope": "pandoc.lua"
+    },
+    "Strikeout": {
+        "body": "Strikeout(${1:content})$0",
+        "description": "Strikeout(content)",
+        "prefix": "strikeout",
+        "scope": "pandoc.lua"
+    },
+    "Strong": {
+        "body": "Strong(${1:content})$0",
+        "description": "Strong(content)",
+        "prefix": "strong",
+        "scope": "pandoc.lua"
+    },
+    "Subscript": {
+        "body": "Subscript(${1:content})$0",
+        "description": "Subscript(content)",
+        "prefix": "subscript",
+        "scope": "pandoc.lua"
+    }, 
+    "Superscript": {
+        "body": "Superscript(${1:content})$0",
+        "description": "Superscript(content)",
+        "prefix": "superscript",
+        "scope": "pandoc.lua"
+    },
+    "Attr": {
+        "body": "Attr(${1:identifier}${2:, classes}${3:, attributes})$0",
+        "description": "Attr([identifier[, classes[, attributes]]])",
+        "prefix": "attr",
+        "scope": "pandoc.lua"
+    },
+    "Citation": {
+        "body": "Citation(${1:id}${2:, mode}${3:, prefix}${4:, suffix}${5:, note_num}${6:, hash})$0",
+        "description": "Citation(id, mode[, prefix[, suffix[, note_num[, hash]]]])",
+        "prefix": "citation",
+        "scope": "pandoc.lua"
+    },
+    "ListAttributes": {
+        "body": "ListAttributes(${1:start}${2:, style}${3:, delimiter})$0",
+        "description": "ListAttributes([start[, style[, delimiter]]])",
+        "prefix": "listattributes",
+        "scope": "pandoc.lua"
+    },
+    "AuthorInText": {
+        "body": "AuthorInText",
+        "description": "",
+        "prefix": "authorintext",
+        "scope": "pandoc.lua"
+    },
+    "SuppressAuthor": {
+        "body": "SuppressAuthor",
+        "description": "",
+        "prefix": "suppressauthor",
+        "scope": "pandoc.lua"
+    },
+    "NormalCitation": {
+        "body": "NormalCitation",
+        "description": "",
+        "prefix": "normalcitation",
+        "scope": "pandoc.lua"
+    },
+    "AlignLeft": {
+        "body": "AlignLeft",
+        "description": "",
+        "prefix": "alignleft",
+        "scope": "pandoc.lua"
+    },
+    "AlignRight": {
+        "body": "AlignRight",
+        "description": "",
+        "prefix": "alignright",
+        "scope": "pandoc.lua"
+    },
+    "AlignCenter": {
+        "body": "AlignCenter",
+        "description": "",
+        "prefix": "aligncenter",
+        "scope": "pandoc.lua"
+    },
+    "AlignDefault": {
+        "body": "AlignDefault",
+        "description": "",
+        "prefix": "aligndefault",
+        "scope": "pandoc.lua"
+    },
+    "DefaultDelim": {
+        "body": "DefaultDelim",
+        "description": "",
+        "prefix": "defaultdelim",
+        "scope": "pandoc.lua"
+    },
+    "Period": {
+        "body": "Period",
+        "description": "",
+        "prefix": "period",
+        "scope": "pandoc.lua"
+    },
+    "OneParen": {
+        "body": "OneParen",
+        "description": "",
+        "prefix": "oneparen",
+        "scope": "pandoc.lua"
+    },
+    "TwoParens": {
+        "body": "TwoParens",
+        "description": "",
+        "prefix": "twoparens",
+        "scope": "pandoc.lua"
+    },
+    "DefaultStyle": {
+        "body": "DefaultStyle",
+        "description": "",
+        "prefix": "defaultstyle",
+        "scope": "pandoc.lua"
+    },
+    "Example": {
+        "body": "Example",
+        "description": "",
+        "prefix": "example",
+        "scope": "pandoc.lua"
+    },
+    "Decimal": {
+        "body": "Decimal",
+        "description": "",
+        "prefix": "decimal",
+        "scope": "pandoc.lua"
+    },
+    "LowerRoman": {
+        "body": "LowerRoman",
+        "description": "",
+        "prefix": "lowerroman",
+        "scope": "pandoc.lua"
+    },
+    "UpperRoman": {
+        "body": "UpperRoman",
+        "description": "",
+        "prefix": "upperroman",
+        "scope": "pandoc.lua"
+    },
+    "LowerAlpha": {
+        "body": "LowerAlpha",
+        "description": "",
+        "prefix": "loweralpha",
+        "scope": "pandoc.lua"
+    },
+    "UpperAlpha": {
+        "body": "UpperAlpha",
+        "description": "",
+        "prefix": "upperalpha",
+        "scope": "pandoc.lua"
+    },
+    "pipe": {
+        "body": "pipe(${1:command}${2:, args}${3:, input})",
+        "description": "",
+        "prefix": "pipe",
+        "scope": "pandoc.lua"
+    },
+    "walk_block": {
+        "body": "walk_block(${1:element}{$2:, filter})",
+        "description": "",
+        "prefix": "walk_block",
+        "scope": "pandoc.lua"
+    },
+    "walk_inline": {
+        "body": "walk_inline(${1:element}${2:, filter})",
+        "description": "",
+        "prefix": "walk_inline",
+        "scope": "pandoc.lua"
+    },
+    "read": {
+        "body": "read(${1:markup}${2:, format})",
+        "description": "",
+        "prefix": "read",
+        "scope": "pandoc.lua"
+    },
+    "text.lower": {
+        "body": "text.lower(${1:s})",
+        "description": "",
+        "prefix": "text.lower",
+        "scope": "pandoc.lua"
+    },
+    "text.upper": {
+        "body": "text.upper(${1:s})",
+        "description": "",
+        "prefix": "text.upper",
+        "scope": "pandoc.lua"
+    },
+    "text.reverse": {
+        "body": "text.reverse(${1:s})",
+        "description": "",
+        "prefix": "text.reverse",
+        "scope": "pandoc.lua"
+    },
+    "text.len": {
+        "body": "text.len(${1:s})",
+        "description": "",
+        "prefix": "text.len",
+        "scope": "pandoc.lua"
+    },
+    "text.sub": {
+        "body": "text.sub(${1:s})",
+        "description": "",
+        "prefix": "text.sub",
+        "scope": "pandoc.lua"
+    },
+    "pandoc.utils.blocks_to_inlines": {
+        "body": "pandoc.utils.blocks_to_inlines(${1:blocks}${2:, sep})",
+        "description": "pandoc.utils.blocks_to_inlines(blocks[, sep])",
+        "prefix": "pandoc.utils.blocks_to_inlines",
+        "scope": "pandoc.lua"
+    },
+    "pandoc.utils.equals": {
+        "body": "pandoc.utils.equals(${1:element1}${2:, element2})",
+        "description": "pandoc.utils.equals(element1, element2)",
+        "prefix": "pandoc.utils.equals",
+        "scope": "pandoc.lua"
+    },
+    "pandoc.utils.make_sections": {
+        "body": "pandoc.utils.make_sections(${1:number_sections}${2:, base_level}${3:, blocks})",
+        "description": "pandoc.utils.make_sections(number_sections, base_level, blocks)",
+        "prefix": "pandoc.utils.make_sections",
+        "scope": "pandoc.lua"
+    },
+    "pandoc.utils.run_json_filter": {
+        "body": "pandoc.utils.run_json_filter(${1:doc}${2:, filter}${3:, args})",
+        "description": "pandoc.utils.run_json_filter(doc, filter[, args])",
+        "prefix": "pandoc.utils.run_json_filter",
+        "scope": "pandoc.lua"
+    },
+    "pandoc.utils.normalize_date": {
+        "body": "pandoc.utils.normalize_date(${1:date_string})",
+        "description": "pandoc.utils.normalize_date(date_string)",
+        "prefix": "pandoc.utils.normalize_date",
+        "scope": "pandoc.lua"
+    },
+    "pandoc.utils.sha1": {
+        "body": "pandoc.utils.sha1(${1:contents})",
+        "description": "pandoc.utils.sha1(contents)",
+        "prefix": "pandoc.utils.sha1",
+        "scope": "pandoc.lua"
+    },
+    "pandoc.utils.stringify": {
+        "body": "pandoc.utils.stringify(${1:element})",
+        "description": "pandoc.utils.stringify(element)",
+        "prefix": "pandoc.utils.stringify",
+        "scope": "pandoc.lua"
+    },
+    "pandoc.utils.to_roman_numeral": {
+        "body": "pandoc.utils.to_roman_numeral(${1:integer})",
+        "description": "pandoc.utils.to_roman_numeral(integer)",
+        "prefix": "pandoc.utils.to_roman_numeral",
+        "scope": "pandoc.lua"
+    },
+    "pandoc.mediabag.delete": {
+        "body": "pandoc.mediabag.delete(${1:filepath})",
+        "description": "pandoc.mediabag.delete(filepath)",
+        "prefix": "pandoc.mediabag.delete",
+        "scope": "pandoc.lua"
+    },
+    "pandoc.mediabag.empty": {
+        "body": "pandoc.mediabag.empty()",
+        "description": "pandoc.mediabag.empty()",
+        "prefix": "pandoc.mediabag.empty",
+        "scope": "pandoc.lua"
+    },
+    "pandoc.mediabag.insert": {
+        "body": "pandoc.mediabag.insert(${1:filepath}${2:, mime_type}${3:, contents})",
+        "description": "pandoc.mediabag.insert(filepath, mime_type, contents)",
+        "prefix": "pandoc.mediabag.insert",
+        "scope": "pandoc.lua"
+    },
+    "pandoc.mediabag.items": {
+        "body": "pandoc.mediabag.items()",
+        "description": "pandoc.mediabag.items()",
+        "prefix": "pandoc.mediabag.items",
+        "scope": "pandoc.lua"
+    },
+    "pandoc.mediabag.list": {
+        "body": "pandoc.mediabag.list()",
+        "description": "pandoc.mediabag.list()",
+        "prefix": "pandoc.mediabag.list",
+        "scope": "pandoc.lua"
+    },
+    "pandoc.mediabag.lookup": {
+        "body": "pandoc.mediabag.lookup(${1:filename})",
+        "description": "pandoc.mediabag.lookup(filename)",
+        "prefix": "pandoc.mediabag.lookup",
+        "scope": "pandoc.lua"
+    },
+    "pandoc.mediabag.fetch": {
+        "body": "pandoc.mediabag.fetch(${1:source}${2:, base_url})",
+        "description": "pandoc.mediabag.fetch(source, base_url)",
+        "prefix": "pandoc.mediabag.fetch",
+        "scope": "pandoc.lua"
+    },
+
+}
