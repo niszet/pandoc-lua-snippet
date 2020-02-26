@@ -7,7 +7,7 @@
 		"vscode": "^1.42.0"
 	},
 	"categories": [
-		"Pandoc", "Lua Filter"
+		"Other",
 	],
 	"main": "./out/extension.js",
 	"contributes": {
