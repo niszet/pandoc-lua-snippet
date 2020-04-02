@@ -23,6 +23,6 @@ If you find any issues please make an issue at GitHub repositry.
 
 Users appreciate release notes as you update your extension.
 
-### 0.0.1
+### 0.0.2
 
 Initial release of `pandoc-lua-snippet`

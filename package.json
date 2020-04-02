@@ -2,7 +2,7 @@
 	"name": "pandoc-lua-snippet",
 	"displayName": "Pandoc Lua Filter Snippet",
 	"description": "Code Snippets for Pandoc Lua Filter",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"publisher": "niszet",
 	"engines": {
 		"vscode": "^1.42.0"
